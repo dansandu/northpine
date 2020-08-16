@@ -1,0 +1,11 @@
+organization: dansandu
+artifact: northpine
+version: 1.0.0
+dependencies:
+- organization: dansandu
+  artifact: glyph
+  version: 1.+0.+0
+- organization: catchorg
+  artifact: catch
+  version: 2.+5.+0
+  scope: test
