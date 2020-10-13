@@ -38,7 +38,7 @@ int main(int argc, char** argv)
     }
     else
     {
-        std::cout << parser.dump();
+        parser.dump(std::cout);
     }
     return 0;
 }

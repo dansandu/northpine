@@ -21,7 +21,7 @@ public:
     double evaluate(const std::map<std::string, std::unique_ptr<dansandu::northpine::function::IFunction>>& functions,
                     const std::map<std::string, double>& variables, std::string_view formula) const;
 
-    std::string dump() const;
+    void dump(std::ostream& stream) const;
 
 private:
     dansandu::glyph::parser::Parser parser_;
