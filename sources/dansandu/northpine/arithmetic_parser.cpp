@@ -36,17 +36,17 @@ ArithmeticParser::ArithmeticParser()
               /*17*/ "ParametersBegin ->                                                             \n"
               /*18*/ "Parameters -> Parameters comma Sums                                            \n"
               /*19*/ "Parameters -> Sums                                                             \n"},
-      tokenizer_{{{parser_.getTerminalSymbol("plus"), "\\+"},
-                  {parser_.getTerminalSymbol("minus"), "\\-"},
-                  {parser_.getTerminalSymbol("multiply"), "\\*"},
-                  {parser_.getTerminalSymbol("divide"), "\\/"},
-                  {parser_.getTerminalSymbol("power"), "\\^"},
-                  {parser_.getTerminalSymbol("identifier"), "[a-zA-Z]\\w*"},
-                  {parser_.getTerminalSymbol("number"), "([1-9]\\d*|0)(\\.\\d+)?"},
+      tokenizer_{{{parser_.getTerminalSymbol("plus"),             "\\+"},
+                  {parser_.getTerminalSymbol("minus"),            "\\-"},
+                  {parser_.getTerminalSymbol("multiply"),         "\\*"},
+                  {parser_.getTerminalSymbol("divide"),           "\\/"},
+                  {parser_.getTerminalSymbol("power"),            "\\^"},
+                  {parser_.getTerminalSymbol("identifier"),       "[a-zA-Z]\\w*"},
+                  {parser_.getTerminalSymbol("number"),           "([1-9]\\d*|0)(\\.\\d+)?"},
                   {parser_.getTerminalSymbol("parenthesesStart"), "\\("},
-                  {parser_.getTerminalSymbol("parenthesesEnd"), "\\)"},
-                  {parser_.getTerminalSymbol("comma"), ","},
-                  {parser_.getDiscardedSymbolPlaceholder(), "\\s+"}}}
+                  {parser_.getTerminalSymbol("parenthesesEnd"),   "\\)"},
+                  {parser_.getTerminalSymbol("comma"),            ","},
+                  {parser_.getDiscardedSymbolPlaceholder(),       "\\s+"}}}
 // clang-format on
 {
 }
